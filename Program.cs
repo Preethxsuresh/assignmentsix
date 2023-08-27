@@ -14,14 +14,14 @@
             Console.Write("Hello There !! \nEnter Your Name : ");
             var userName = Console.ReadLine();
             int count = 0;
-            while (string.IsNullOrWhiteSpace(userName) && count < 2)
+            while (string.IsNullOrWhiteSpace(userName) && count < 3)
             {
                 count++;
                 Console.Write("Invlaid Input.Enter again : ");
                 userName = Console.ReadLine();
             }
 
-            if (count == 2)
+            if (count == 3)
             {
                 Console.WriteLine("You have entered invalid input multiple times.Exiting Program...");
                 Environment.Exit(0);
