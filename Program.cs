@@ -12,13 +12,13 @@
         public static void Main(string[] args)
         {
             Console.Write("Hello There !! \nEnter Your Name : ");
-            var userName = Console.ReadLine();
+            var inputName = Console.ReadLine();
             int count = 0;
-            while (string.IsNullOrWhiteSpace(userName) && count < 3)
+            while (string.IsNullOrWhiteSpace(inputName) && count < 3)
             {
                 count++;
                 Console.Write("Invlaid Input.Enter again : ");
-                userName = Console.ReadLine();
+                inputName = Console.ReadLine();
             }
 
             if (count == 3)
@@ -26,7 +26,7 @@
                 Console.WriteLine("You have entered invalid input multiple times.Exiting Program...");
                 Environment.Exit(0);
             }
-            Console.WriteLine($"\nHey {userName}, Welcome :)");
+            Console.WriteLine($"\nHey {inputName}, Tnx");
 
         }
     }
